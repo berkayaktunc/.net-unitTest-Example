@@ -1,36 +1,36 @@
 ## Test projesi oluşturmak
 İlk olarak yeni bir proje eklenir
-![](TestProjeOluşturma\01.jpg)
+![](testProjeOluşturma/01.jpg)
 
 Proje __NUnit Test Project__ olarak açılır
-![](TestProjeOluşturma\02.jpg)
+![](testProjeOluşturma/02.jpg)
 
 İsimlendirme __TestEdilecekClassİsmi.UnitTest__ şeklinde olmalıdır
-![](TestProjeOluşturma\03.jpg)
+![](testProjeOluşturma/03.jpg)
 
 Yeni açılan projedeki dosyanın isimlendirilmesi da doğru yapılmalı
-![](TestProjeOluşturma\04.jpg)
+![](testProjeOluşturma/04.jpg)
 
 Bu örnekte __ApplicationEvaluate__ için bir unit test yazıldığı açık bir şekilde anlaşılıyor
-![](TestProjeOluşturma\05.jpg)
+![](testProjeOluşturma/05.jpg)
 
 Bu adımın hemen ardından class için de doüzgün bir ism verilmeli
-![](TestProjeOluşturma\06.jpg)
+![](testProjeOluşturma/06.jpg)
 
 Yazılan testin çalıştırılması için __Test Explorer__in ekranda gösterilmesi gerekli.
-![](TestProjeOluşturma\07.jpg)
+![](testProjeOluşturma/07.jpg)
 
 ## Test edilecek projeyi dependency olarak eklemek
 Son ve en önemli adımlardan biri ise test edilen projeyi, yeni açılan test projesine dependency olarak ekleme.
-![](TestProjeOluşturma\08.jpg)
+![](testProjeOluşturma/08.jpg)
 
-![](TestProjeOluşturma\09.jpg)
+![](testProjeOluşturma/09.jpg)
 
 ## Yazılan test methodunu çalıştırmak
 
 Yazılan testin çalıştırılması için birkaç yöntem vardır. Sadece yazılan methodun çalışması isteniyorsa, methotun hemen yanında çıkan butona basarak __Run__ seçeneği seçilebilir.
-![](TestProjeOluşturma\10.jpg)
+![](testProjeOluşturma/10.jpg)
 
 Eğer yazılan tüm test methotları tek seferde çalıştırılsın isteniyor ise __Test Explorer__ penceresinden şekildeki sağlanabilir.
 
-![](TestProjeOluşturma\11.jpg)
+![](testProjeOluşturma/11.jpg)
