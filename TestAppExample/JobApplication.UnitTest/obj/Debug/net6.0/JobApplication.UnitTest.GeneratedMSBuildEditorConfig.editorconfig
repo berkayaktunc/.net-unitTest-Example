@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = JobApplication.UnitTest
-build_property.ProjectDir = d:\STAJ\TESTS\TestAppExample\JobApplication.UnitTest\
+build_property.ProjectDir = d:\STAJ\TEMP-NETTEST\.net-unitTest-Example\TestAppExample\JobApplication.UnitTest\
