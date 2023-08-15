@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "/3Ac0F8MsgPie3Z+xPK5t2aRlvAmo582WYUXwmk1/E+/o7r91N/aBP20FKG77NtsLsQriNpq0AyysIsNT8bN0Q==",
+  "success": true,
+  "projectFilePath": "D:\\STAJ\\TESTS\\TestAppExample\\TestAppExample\\TestAppExample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\52Bluee\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\52Bluee\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\52Bluee\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\52Bluee\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.20\\microsoft.netcore.app.host.win-x64.6.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>UnitTestSnippet</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <!--Eğer kısayolu değiştirmek isterseniz
+        'utest' yazısını istediğinizle değiştirin-->
+      <Shortcut>utest</Shortcut>
+    </Header>
+    <Snippet>
+  <Declarations>
+    <Literal Editable="true">
+      <ID>FunctionUnderTest</ID>
+      <ToolTip>Function under test</ToolTip>
+      <Default>FunctionUnderTest</Default>
+      <Function>
+      </Function>
+    </Literal>
+    <Literal Editable="true">
+      <ID>ExpectedResult</ID>
+      <ToolTip>Expected result</ToolTip>
+      <Default>ExpectedResult</Default>
+      <Function>
+      </Function>
+    </Literal>
+    <Literal Editable="true">
+      <ID>UnderCondition</ID>
+      <ToolTip>Under condition</ToolTip>
+      <Default>UnderCondition</Default>
+      <Function>
+      </Function>
+    </Literal>
+  </Declarations>
+  <Code Language="csharp" Kind="method decl"><![CDATA[[Test]
+public void $FunctionUnderTest$_$ExpectedResult$_$UnderCondition$()
+{
+  // Arrange
+  $end$
+
+  // Act
+  
+
+  // Assert
+
+  
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
