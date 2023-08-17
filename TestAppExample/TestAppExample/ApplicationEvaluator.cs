@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using TestAppExample.Models;
+using TestAppExample.Services;
 
 namespace TestAppExample
 {
@@ -13,6 +14,17 @@ namespace TestAppExample
         private const int minAge = 18;
         private List<string> techList = new() { "C#", "RabbirMQ", "Microservices", "Visual Studio" };
 
+        private readonly IIdentityValidator _identityValidator;
+
+        // class dışarıdan interface alarak çalışıyor varsayıyoruz.
+        //  Services klasörü içerisinde onu temsilen
+        //  IIdentityValidator interfacesi oluşturduk ve IdentityValidator
+        //  içerisinde imlementasyonunu yaptık
+        public ApplicationEvaluator(IIdentityValidator identityValidator)
+        {
+            // projeye bu sayede ekledik
+            this._identityValidator = identityValidator; 
+        }
 
         public ApplicationResult Evalauate(JobApplication form)
         {
@@ -23,7 +35,10 @@ namespace TestAppExample
             }
 
             var similarityRate = GetTechSimilarityRate(form.TechStackList);
+            var valid = _identityValidator.IsValid(form.Applicant.IdentityNumber);
 
+            if (!valid)
+                return ApplicationResult.TransferredToHR;
             // benzerlik 25%den az ise direk reject et
             if (similarityRate < 25)
                 return ApplicationResult.AutoReject;
@@ -35,7 +50,7 @@ namespace TestAppExample
             if (form.YearsOfExperience > 10)
                 return ApplicationResult.AutoAccept;
 
-            return ApplicationResult.TransferredToHR;
+            return ApplicationResult.TransferredToCTO;
         }
 
         private int GetTechSimilarityRate(List<string> inList)

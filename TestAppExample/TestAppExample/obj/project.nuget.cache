@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "/3Ac0F8MsgPie3Z+xPK5t2aRlvAmo582WYUXwmk1/E+/o7r91N/aBP20FKG77NtsLsQriNpq0AyysIsNT8bN0Q==",
+  "dgSpecHash": "WxJ62XYDlBM5PBfUfTx+2F1AtOHwl08ruLuqFSkFPW35rjwnt866Rt0MUJMz8RAnWvbaONHaByWQrnqwF9XoIg==",
   "success": true,
-  "projectFilePath": "D:\\STAJ\\TESTS\\TestAppExample\\TestAppExample\\TestAppExample.csproj",
+  "projectFilePath": "/home/dellpc/Desktop/staj/.net-unitTest-Example/TestAppExample/TestAppExample/TestAppExample.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\52Bluee\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\52Bluee\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\52Bluee\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\52Bluee\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.20\\microsoft.netcore.app.host.win-x64.6.0.20.nupkg.sha512"
+    "/home/dellpc/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
+    "/home/dellpc/.nuget/packages/moq/4.20.69/moq.4.20.69.nupkg.sha512",
+    "/home/dellpc/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "/home/dellpc/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.20/microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
+    "/home/dellpc/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.20/microsoft.netcore.app.host.linux-x64.6.0.20.nupkg.sha512",
+    "/home/dellpc/.nuget/packages/microsoft.netcore.app.ref/6.0.20/microsoft.netcore.app.ref.6.0.20.nupkg.sha512"
   ],
   "logs": []
 }
