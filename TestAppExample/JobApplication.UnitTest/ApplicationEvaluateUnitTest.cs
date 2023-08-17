@@ -29,13 +29,11 @@ namespace JobApplicationLibrary.UnitTest
             };
 
 
-
             // Act ------------------------------------------------------------------
 
             // ApplicationEvaluator class içerisindeki "Evaluator" methodu kullanımı
             // Evaluate methodu form istediği için Arrange kısmında form hazırlandı
             var result = evaluator.Evalauate(form);
-
 
 
             // Assert ------------------------------------------------------------------
@@ -48,7 +46,7 @@ namespace JobApplicationLibrary.UnitTest
         [Test]
         public void Application_ExperienceWith18_AutoAccepted()
         {
-            // Arrange
+            // Arrange  ------------------------------------------------------------------
             var evaluator = new ApplicationEvaluator(null);
 
             // Tüm şartları fazlasıyla tutturan biri yaratıldı
@@ -59,10 +57,11 @@ namespace JobApplicationLibrary.UnitTest
             };
 
 
-            // Act
+            // Act ------------------------------------------------------------------
             var result = evaluator.Evalauate(form);
 
-            // Assert
+
+            // Assert ------------------------------------------------------------------
 
             // Sonuç olarak AutoAccept olması bekleniyor
             Assert.AreEqual(result, ApplicationResult.AutoAccept);
@@ -73,7 +72,7 @@ namespace JobApplicationLibrary.UnitTest
         [Test]
         public void Application_WithValid_AutoAccept()
         {
-            // Arrange
+            // Arrange ------------------------------------------------------------------
 
             // Moq bir interface oluşturma
             var moqValidator = new Mock<IIdentityValidator>();
@@ -84,14 +83,6 @@ namespace JobApplicationLibrary.UnitTest
             */
             moqValidator.Setup(i=> i.IsValid("")).Returns(true);
 
-            /* Yukarıda bahsettiğim sorunu çözmek için It classı kullanılır
-            /  It classı ile IsValid() içine verilecek input türevleri tanımlanabilir
-            */
-
-            /* Aşağıdaki satır: IsValid() içerisine string olarak ne atılırsa atılsın
-            /  bana sonuç olarak return dön demek
-            */
-            moqValidator.Setup(i=> i.IsValid(It.IsAny<string>())).Returns(true);        
 
             // Moq bir interface method içerisine "xx.Object" şeklinde gönderilir
             var evaluator = new ApplicationEvaluator(moqValidator.Object);
@@ -105,14 +96,14 @@ namespace JobApplicationLibrary.UnitTest
 
 
 
-            // Act
+            // Act ------------------------------------------------------------------
             var result = evaluator.Evalauate(form);
 
 
-            // Assert
+            // Assert ------------------------------------------------------------------
 
-            // Sonuç olarak AutoAccept olması bekleniyor
-            Assert.AreEqual(result, ApplicationResult.AutoAccept);
+            // Sonuç olarak TransferedToHR olması bekleniyor
+            Assert.AreEqual(result, ApplicationResult.TransferredToHR);
         }
 
 
@@ -120,16 +111,10 @@ namespace JobApplicationLibrary.UnitTest
         [Test]
         public void Application_WithNonValid_AutoAccept()
         {
-            // Arrange
+            // Arrange ------------------------------------------------------------------
 
             // Moq bir interface oluşturma
             var moqValidator = new Mock<IIdentityValidator>();
-
-            /* Eğer isvalid içerisine boş string atılırsa
-            /  sonuç olarak true döner.
-            /   Buradaki sorun, IsValid("123") girilirse false döner
-            */
-            moqValidator.Setup(i=> i.IsValid("")).Returns(false);
 
             /* Yukarıda bahsettiğim sorunu çözmek için It classı kullanılır
             /  It classı ile IsValid() içine verilecek input türevleri tanımlanabilir
@@ -152,25 +137,14 @@ namespace JobApplicationLibrary.UnitTest
 
 
 
-            // Act
+            // Act ------------------------------------------------------------------
             var result = evaluator.Evalauate(form);
 
 
-            // Assert
+            // Assert ------------------------------------------------------------------
 
             // Sonuç olarak AutoReject olması bekleniyor
             Assert.AreEqual(result, ApplicationResult.AutoReject);
-        }
-
-
-
-        [Test]
-        public void Temp(){
-            // Arrange
-
-            // Act
-
-            // Assert
         }
     }
 }
