@@ -1,46 +1,58 @@
 # Windows
+
 ## Snippet eklemek
-İlk önce tools menüsünden __code snipper manager__ seçilir
+
+- İlk önce tools menüsünden **code snipper manager** seçilir
 
 ![](snippetOluşturma/01.jpg)
 
-Karşımıza çıkan pencerede __Import__ seçeneği seçilir ve [__UnitTestSnippet.snippet__](snippetOluşturma/UnitTestSnippet.snippet) dosyası seçilir
+
+- Karşımıza çıkan pencerede **Import** seçeneği seçilir ve [**UnitTestSnippet.snippet**](snippetOluşturma/UnitTestSnippet.snippet) dosyası seçilir
 
 ![](snippetOluşturma/02.jpg)
 
-Bu pencerede __Finish__ seçeneği seçilir ve işlem tamamlanmış olur
+
+- Bu pencerede **Finish** seçeneği seçilir ve işlem tamamlanmış olur
 
 ![](snippetOluşturma/03.jpg)
 
+
 ## Snippetin eklenip eklenmediğini kontrol etmek
-Snippetin eklenip eklenmediğini kontrol etmek için gerekirse tekrardan _code snipper manager_ açılır ve __Language__ __CSharp__ olarak seçilir. Eklenen snippet örnekteki gibi görünüyorsa sorun yoktur.
+
+- Snippetin eklenip eklenmediğini kontrol etmek için gerekirse tekrardan *code snipper manager* açılır ve **Language** ise **CSharp** olarak seçilir. Eklenen snippet örnekteki gibi görünüyorsa sorun yoktur.
 
 ![](snippetOluşturma/04.jpg)
 
+
 ## Snippetin çalıştırılması
-Şimdi kullanmak için herhangi bir _.cs_ dosyası açıp __utest__ yazıp iki kez _tab_ tuşuna basın. Sonuç aşağıdaki gibi olacaktır.
+
+- Şimdi kullanmak için herhangi bir *.cs* dosyası açıp **utest** yazıp iki kez *tab* tuşuna basın. Sonuç aşağıdaki gibi olacaktır.
 
 ![](snippetOluşturma/05.jpg)
-
 ![](snippetOluşturma/06.jpg)
 
-Not: Eğer __utest__ dışında bir snippet kısayolu atamak isterseniz, [__UnitTestSnippet.snippet__](snippetOluşturma/UnitTestSnippet.snippet) dosyası içerisindeki ilgili yeri (satır 17) değiştirmeniz gerekmektedir.
+
+Not: Eğer **utest** dışında bir snippet kısayolu atamak isterseniz, [**UnitTestSnippet.snippet**](snippetOluşturma/UnitTestSnippet.snippet) dosyası içerisindeki ilgili yeri (satır 17) değiştirmeniz gerekmektedir.
 
 ![](snippetOluşturma/07.jpg)
+
 
 # Linux / VsCode
 
 ## Snippet Eklemek
 
-İlk olarak __Ctrl+Shift+P__ kombinasyonu ile __Komut Paleti__ açılır
+- İlk olarak **Ctrl+Shift+P** kombinasyonu ile **Komut Paleti** açılır
 
 ![](snippetOluşturma/l01.jpg)
 
-Buraya __Configure User Snippet__ yazılır ve __csharp__ seçilir
+
+- Buraya **Configure User Snippet** yazılır ve **csharp** seçilir
+
 ![](snippetOluşturma/l02.jpg)
 ![](snippetOluşturma/l03.jpg)
 
-Açılan dosyaya aşağıdaki kod parçası resimdeki gibi eklenir ve kaydedilir
+
+- Açılan dosyaya aşağıdaki kod parçası resimdeki gibi eklenir ve kaydedilir
 
 ```json
 "Print to cosole": {
@@ -58,11 +70,14 @@ Açılan dosyaya aşağıdaki kod parçası resimdeki gibi eklenir ve kaydedilir
     "description": "[UTEST] csharp UnitTest template."
 }
 ```
+
 ![](snippetOluşturma/l04.jpg)
 
+
+
 ## Snippetin çalıştırılması
-Şimdi kullanmak için herhangi bir _.cs_ dosyası açıp __utest__ yazıp bir kez _tab_ tuşuna basın. Sonuç aşağıdaki gibi olacaktır.
+
+- Şimdi kullanmak için herhangi bir *.cs* dosyası açıp **utest** yazıp bir kez *tab* tuşuna basın. Sonuç aşağıdaki gibi olacaktır.
 
 ![](snippetOluşturma/l05.jpg)
-
 ![](snippetOluşturma/l06.jpg)
